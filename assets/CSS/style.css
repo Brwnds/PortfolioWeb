@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --cor-da-pagina: #e9e6e6;
+    --cor-subtitulo: rgb(73, 72, 72);
+    --cor-destaque-do-texto: #1308aa;
+    --cor-destaque-especializacao: #494cf5;
+    --cor-destaque-curso-graduacao: rgb(136, 134, 134);
+    --cor-hover: rgb(212, 209, 209);
+    --cor-botao-e-rodape: #ffffff;
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secudaria: "Krona One", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-da-pagina);
+    color: var(--cor-subtitulo);
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-destaque-do-texto);
+    text-decoration: none;
+}
+
+.titulo-brenda {
+    color: var(--cor-destaque-do-texto);
+}
+
+.cor-especificacoes {
+    color: var(--cor-destaque-especializacao);
+}
+
+.cabecalho {
+    display: flex;
+    padding: 2% 0 0 15%;
+    font-family: var(--fonte-primaria);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.printf-titulo {
+    font-size: 2.5rem;
+    color: var(--cor-destaque-especializacao);
+    font-family: var(--fonte-primaria);
+}
+
+.Cor-Im {
+    color: var(--cor-destaque-curso-graduacao);
+}
+
+.subtitulo-do-hello-its-brenda {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.descricao-cargo {
+    color: var(--cor-destaque-do-texto);
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.descricao-apresentacao-conteudo {
+    font-size: 1.5rem;
+    color: var(--cor-subtitulo);
+    font-family: var(--fonte-primaria);
+}
+
+.Apresentacao {
+    /*Mexe diretamente com a imagem do perfil*/
+    padding: 8% 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin-right: 100px;
+    gap: 82px;
+}
+
+.profile-img {
+    width: 300px;
+    /* Defina a largura desejada */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10%;
+    /* Bordas arredondadas para uma aparência mais suave, ajuste conforme necessário */
+}
+
+.aprensentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.redes__estilização__links {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-destaque-do-texto);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-right: 5px;
+    background-color: var(--cor-botao-e-rodape);
+    border: 2px solid var(--cor-hover);
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-destaque-especializacao);
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 28%;
+    border-radius: 10%;
+}
+
+.rodape {
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 18px;
+    font-weight: 400;
+    color: var(--cor-botao-e-rodape);
+    background-color: var(--cor-subtitulo);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column;
+    }
+}
